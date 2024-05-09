@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    @import url("https://use.typekit.net/mrg4tpz.css");
+}
+
+body {
+    font-family: "roc-grotesk", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+    background-color:white;
+}
+
+
+header {
+    width: 100vw;
+    height: auto;
+    background-color:black;
+    display:flex;
+    justify-content:space-between;
+    padding: 1% 5% 0% 5%;
+
+}
+
+#logotip {
+    width: 25%;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+#logotip img{
+    width: 20%;
+
+}
+
+nav {
+    width: 50%;
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+}
+
+#menu {
+    width: auto;
+    height: 100%;
+    list-style:none;
+    display:flex;
+    padding:4vh;
+}
+
+.linksmenu {
+    width: auto;
+    margin: 0px 40px;
+    font-weight: normal;
+}
+
+.linksmenu a {
+    text-decoration:none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 16px;
+    padding:4vh;
+} 
+
+.linksmenu a:hover{
+    font-weight: bold;
+}
+
+hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display:flex;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/*2. ABOUT OUR FESTIVAL*/
+
+#about {
+    width: 100vw;
+    height: auto;
+    padding: 10% 10% 10% 10%;
+    display:flex;
+    flex-direction:row;
+    background-color: #white;
+    font-weight:regular ;
+
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+.sobreaquestfestival {
+    width:  50%;
+    padding-right:2%;
+}
+
+.benvingutsalfestival {
+    width:  50%;
+    padding-left:2%;
+}
+
+/*3. FOOTER*/
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 5% 10% 5% 10%
+  
+}
+
+.footer-caixa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 25%;
+  padding:2%;
+}
+
+.footer-section h2 {
+  color: white;
+  margin-top:10%;
+ 
+
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#grups{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 10% 5% 5%;
+}
+
+.grup{
+    width: 40%;
+    height: auto;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.grup img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+}
+
+.contacte{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5% 10% 5% 10%;
+    color: white;
+}
+
+.formulari{
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.mapa{
+    width: 100%;
+    background-color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 2%;
+}
+
+button {
+    font-size: 1.7rem;
+}
+
+input {
+    width: 150%;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 6px;
+}
+
+textarea {
+    width: 150%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 6px;
+}
+
+
+button {
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MÒBIL*/
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction:column;
+        padding-top:10%;
+    }
+
+    nav {
+        .linksmenu a 
+            font-size: 2rem;
+            line-height:4rem;
+        }
+
+    #logotip img{
+        height: auto;
+        width: 50%;
+    }
+
+    #menu {
+        display:flex;
+        flex-direction:column;
+    }
+
+    #about {
+        flex-direction:column;
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+
+    .sobreaquestfestival {
+        width:  100%;
+    } 
+
+    .benvingutsalfestival {
+        width:  100%;
+        padding-top:2%;
+    }
+
+    .footer-caixa {
+        flex-direction:column;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    a:hover {
+        font-size: 2rem;
+        text-decoration-line: underline;
+    }
